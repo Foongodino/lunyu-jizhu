@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6d3d1f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/style.css">
+<title>《論語集註》中國風教學投影版 v5.4</title></head>
+<body>
+<div class="progress"><span id="bar"></span></div>
+<header><div class="top"><div class="brand">《論語集註》中國風教學投影版 v5.4</div>
+<input id="search" placeholder="搜尋原文、集註或白話">
+<button id="theme">夜間</button><button id="minus">A−</button><button id="plus">A＋</button></div></header>
+<nav class="fixed-actionbar" aria-label="閱讀快捷工具列">
+  <button id="prevChapter" title="上一章">◀</button>
+  <button id="nextChapter" title="下一章">▶</button>
+  <button id="tocBtn" title="目錄">☰</button>
+  <button id="searchBtn" title="搜尋">⌕</button>
+  <button id="bookmarkBtn" title="收藏本章">☆</button>
+  <button data-view="teaching" title="故事教學模式">教學</button>
+  <button data-view="all" title="完整模式">完整</button>
+  <button id="minusTop" title="縮小字體">A−</button>
+  <button id="plusTop" title="放大字體">A＋</button>
+  <button id="themeTop" title="切換夜間模式">☾</button>
+  <button id="expandTop" title="全部展開">＋</button>
+  <button id="collapseTop" title="全部收合">－</button>
+  <button id="projector169" title="16:9 投影模式">16:9</button><button id="fullscreenTop" title="全螢幕">⛶</button><button id="topTop" title="回到頂端">↑</button>
+</nav>
+
+<div class="layout">
+<aside><a href="#home"><strong>閱讀首頁</strong></a><div id="toc"></div><a href="#bookmarks">我的書籤</a></aside>
+<main>
+<section id="home" class="card">
+<h1>《論語集註》中國風教學投影版 v5.4</h1>
+<p>全二十篇、499節章；固定操作列，原文採粗體大字，適合手機、投影與講課。</p><p class="notice"><strong>內容說明：</strong>「先天解、故事引導、修辦應用」是現代教學延伸，並非《論語》原文或朱熹《集註》。全書499節章已補入「先天解、故事引導、修辦應用」。其中未標示史實來源者，均以寓意故事呈現。</p>
+<div class="status-grid">
+<div class="status-box"><span>總節章</span><strong>499</strong></div>
+<div class="status-box"><span>完整原註標記</span><strong id="fullCount">0</strong></div>
+<div class="status-box"><span>要義整理標記</span><strong id="summaryCount">0</strong></div><div class="status-box"><span>教學延伸已完成</span><strong id="teachingCount">0</strong></div>
+<div class="status-box"><span>已收藏</span><strong id="bookmarkCount">0</strong></div>
+<div class="status-box"><span>已有筆記</span><strong id="noteCount">0</strong></div>
+</div>
+<div class="toolbar"><button data-view="all">全部</button><button data-view="original">只看原文</button><button data-view="notes">原文＋集註</button><button data-view="modern">原文＋白話</button><button data-view="teaching">故事教學模式</button></div>
+<div class="reader-tools"><button id="focusBtn">專注閱讀</button><button id="projectorBtn">投影模式</button><button id="expandBtn">全部展開</button><button id="collapseBtn">全部收合</button><button id="printBtn">列印／PDF</button><button id="topBtn">回到頂端</button></div>
+</section>
+<div id="entries"></div>
+<section id="bookmarks" class="card"><h2>我的書籤</h2><div id="bookmarkList">尚未收藏章節。</div></section>
+</main></div>
+<script src="assets/app.js"></script>
+</body></html>

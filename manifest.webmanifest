@@ -1,0 +1,10 @@
+{
+  "name": "《論語集註》中國風教學投影版 v5.4",
+  "short_name": "論語中國風",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5efe4",
+  "theme_color": "#6d3d1f",
+  "lang": "zh-Hant",
+  "orientation": "landscape"
+}
